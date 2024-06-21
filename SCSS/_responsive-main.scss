@@ -1,0 +1,39 @@
+@media (max-width:828px){
+    h2{
+    font-size: 20px;
+    }
+    .BotonHome{
+        width: 350px;
+    }
+    .EscucharAhora{
+        font-size: 40px
+    }
+}
+
+@media (max-width:694px){
+    h2{
+    visibility: hidden;
+    }
+    .BotonHome{
+        visibility: hidden;
+    }
+    .EscucharAhora{
+        visibility: hidden;
+    }
+}
+
+@media (max-width:600px){
+    .navbar{
+        justify-content: right;
+        text-align: right;
+    }
+
+}
+
+@media (max-width:400px){
+    .navbar{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+}

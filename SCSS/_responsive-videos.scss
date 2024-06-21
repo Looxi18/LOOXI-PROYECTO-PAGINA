@@ -1,0 +1,19 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+
+}
+
+.VIDEOS {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .iframe {
+        width: 700px;
+        height: 600px;
+        justify-content: center;
+    }
+}

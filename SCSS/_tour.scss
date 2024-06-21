@@ -1,0 +1,28 @@
+.tour-fechas {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    bottom: 150px;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+.lugares {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    background-color: #adadad;
+    margin: 50px;
+    content: normal;
+}
+
+.tickets-botones {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
