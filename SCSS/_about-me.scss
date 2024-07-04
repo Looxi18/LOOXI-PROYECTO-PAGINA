@@ -1,0 +1,65 @@
+.atardecer-frenesies {
+    width: 80%;
+    max-width: 1100px;
+    margin: 40px auto;
+    display: grid;
+}
+
+.enlaces-navbar-sobre-mi{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-principal;
+    font-family: $fuente-principal;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.contenedorSobre-mi {
+    width: 700px;
+    margin: 50px auto;
+}
+
+.header-sobre-mi {
+    width: 100px;
+    height: 100px;
+
+    .navbar-sobre-mi {
+        display: grid;
+        text-decoration: none;
+        padding: 45px;
+        margin-top: 10px;
+
+        .ul-sobre-mi {
+            li {
+                list-style: none;
+                padding: 10px;
+            }
+        }
+
+        :hover {
+            color: $color-navbar;
+        }
+
+        height: 500px;
+        width: 500px;
+    }
+}
+
+.Frenesies-Video-sobre-mi {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+
+    filter: sepia(100%) blur(60px);
+}
+p{
+    font-family: $fuente-principal;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+}

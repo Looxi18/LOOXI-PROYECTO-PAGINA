@@ -1,39 +1,51 @@
-@media (max-width:828px){
-    h2{
-    font-size: 20px;
+@media (max-width:1024px) {
+    h2 {
+        font-size: 20px;
     }
-    .BotonHome{
+
+    .BotonHome {
         width: 350px;
     }
-    .EscucharAhora{
+
+    .EscucharAhora {
         font-size: 40px
     }
 }
 
-@media (max-width:694px){
-    h2{
-    visibility: hidden;
+@media (max-width:878px) {
+    h2 {
+        display: none;
     }
-    .BotonHome{
-        visibility: hidden;
+
+    .BotonHome {
+        display: none;
     }
-    .EscucharAhora{
-        visibility: hidden;
+
+    .EscucharAhora {
+        display: none;
     }
 }
 
-@media (max-width:600px){
-    .navbar{
-        justify-content: right;
-        text-align: right;
+
+
+@media (max-width:790px) {
+    header {
+        nav {
+            .navbar {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 20px;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-size: 60px;
+                width: auto;
+
+            }
+        }
     }
 
-}
-
-@media (max-width:400px){
-    .navbar{
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
 }

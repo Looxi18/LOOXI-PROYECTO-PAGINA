@@ -1,19 +1,124 @@
-body {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    height: 100vh;
+
+@media(max-width:1440px) {
+    .enlaces-navbar-videos {
+        font-size: 25px;
+    }
+
+    .titulo-videos {
+        font-size: 20px;
+    }
+
+    .VIDEOS {
+        .iframe {
+            width: 600px;
+        }
+    }
+
 
 }
 
-.VIDEOS {
-    grid-column: 2/3;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    .iframe {
-        width: 700px;
-        height: 600px;
+@media (max-width:1200px) {
+    .VIDEOS {
+        .iframe {
+            width: 1000px;
+        }
+    }
+    h1 {
+        display: none;
+    }
+    .ul-videos{
+        display: flex;
+    }
+    .header-videos{
+        width: 100%;
+    }
+    .nav-general-videos{
+        display: flex;
         justify-content: center;
+        align-items: center;
+    }
+    .enlaces-navbar-videos {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-principal;
+        font-family: $fuente-principal;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: left;
+    
+    }
+    .navbar-videos {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 45px;
+        margin-top: 10px;
+        position: static;
+        
+    
+        ul {
+            li {
+                list-style: none;
+                padding: 10px;
+            }
+        }
+    
+        :hover {
+            color: $color-navbar;
+        }
+    }
+}
+
+@media (max-width:1000px) {
+    .VIDEOS {
+        .iframe {
+            width: 850px;
+        }
+    }
+    .ul-videos{
+        padding: 0px;
+    }
+}
+
+
+@media (max-width:850px) {
+    .VIDEOS {
+        .iframe {
+            width: 600px;
+        }
+    }
+
+    
+}
+
+@media (max-width:606px) {
+    .VIDEOS {
+        .iframe {
+            width: 400px;
+        }
+    }
+
+    .enlaces-navbar-videos {
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width:442px) {
+    .VIDEOS {
+        .iframe {
+            width: 350px;
+        }
+    }
+    .enlaces-navbar-videos {
+        font-size: 12px;
+    }
+    .ul-videos{
+        padding: 0px;
     }
 }
