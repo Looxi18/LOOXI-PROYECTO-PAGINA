@@ -17,7 +17,7 @@
         text-transform: uppercase;
         color: $color-principal;
         font-family: $fuente-principal;
-        font-size: 25px;
+        font-size: 30px;
         font-weight: bold;
         text-decoration: none;
         text-align: left;
@@ -26,6 +26,7 @@
 
     .navbar-sobre-mi {
         width: 100%;
+        height: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -47,12 +48,12 @@
     }
 }
 
-@media (max-width:700px) {
+@media (max-width:1000px){
+    
     .enlaces-navbar-sobre-mi {
         font-size: 20px;
     }
 }
-
 @media (max-width:768px) {
     .contenedorSobre-mi {
         width: 60%;
@@ -63,17 +64,18 @@
         font-size: 20px;
     }
 
-    .enlaces-navbar-sobre-mi {
-        font-size: 16px;
 
+    .enlaces-navbar-sobre-mi {
+        font-size: 20px;
     }
 
 }
 
-@media (max-width:600px) {
-    
+@media (max-width:700px) {
+    .enlaces-navbar-sobre-mi {
+        font-size: 20px;
+    }
 }
-
 @media (max-width:560px) {
     .contenedorSobre-mi {
         width: 70%;
@@ -83,6 +85,10 @@
     p {
         font-size: 15px;
     }
+    .enlaces-navbar-sobre-mi {
+        font-size: 18px;
+
+    }
 }
 
 @media (max-width:500px) {
@@ -91,9 +97,16 @@
 
     }
 }
-@media(max-width:450px){
-    .enlaces-navbar-sobre-mi {
-        font-size: 13px;
 
+@media(max-width:450px) {
+    .enlaces-navbar-sobre-mi {
+        font-size: 14px;
+
+    }
+
+    .header-sobre-mi {
+        .navbar-sobre-mi {
+            height: 100px;
+        }
     }
 }

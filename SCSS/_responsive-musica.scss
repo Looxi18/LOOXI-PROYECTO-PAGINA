@@ -54,16 +54,46 @@
             color: $color-navbar;
         }
     }
+
+    .header-musica{
+        .nav-musica{
+            width: 100%;
+        }
+    }
+}
+@media (max-width:1000px){
+    .enlaces-navbar-musica{
+        font-size: 20px;
+    }
 }
 
 @media (max-width:670px){
     .enlaces-navbar-musica{
         font-size: 20px;
     }
-}
 
+    .header-musica{
+        .nav-musica{
+            width: 100%;
+        }
+
+    }
+
+}
 @media (max-width:470px){
     .enlaces-navbar-musica{
-        font-size:16px
+        font-size:14px
+    }
+
+    .portadasAlbumes{
+        width: 100%;
+        height: 80%;
+        
+    }
+    .contenedorAlbum{
+        justify-content: center;
+        width: 80%;
+
     }
 }
+

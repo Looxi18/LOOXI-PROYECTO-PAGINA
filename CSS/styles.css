@@ -8,22 +8,16 @@
   text-transform: uppercase;
 }
 
-header {
-  width: 400px;
-}
-
-nav {
-  width: 400;
-}
-
 .navbar {
   display: grid;
   text-decoration: none;
   padding: 40px;
   margin-top: 10px;
   width: 400px;
+  position: absolute;
+  z-index: 1;
 }
-.navbar ul li {
+.navbar .ul-home li {
   list-style: none;
   padding: 10px;
 }
@@ -49,6 +43,7 @@ nav {
   right: 0;
   left: 0;
   bottom: 0;
+  padding-top: 100px;
 }
 
 .logo {
@@ -88,22 +83,15 @@ nav {
   width: 100%;
   background-color: white;
   position: fixed;
-  opacity: 15%;
+  opacity: 30%;
   mix-blend-mode: hard-light;
   top: 0;
   left: 0;
   z-index: -99;
 }
 
-.main-text {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 10%;
-  right: 50%;
-  transform: translate(50%, -50%);
-  color: black;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+.frenesies-portada-inicio {
+  width: 20%;
 }
 
 .BotonHome {
@@ -113,7 +101,7 @@ nav {
   color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: italic;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
 }
 .BotonHome :hover {
@@ -125,6 +113,32 @@ nav {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-transform: uppercase;
   color: black;
+}
+
+.h1-texto {
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+}
+
+@keyframes fade-inout {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.inicio {
+  width: 100%;
+  padding-top: 100px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  row-gap: 70px;
+  animation: fade-inout 6s infinite alternate;
 }
 
 .VIDEOS {
@@ -240,9 +254,9 @@ nav {
 
 .atardecer-frenesies {
   width: 80%;
-  max-width: 1100px;
   margin: 40px auto;
   display: grid;
+  padding-bottom: 100px;
 }
 
 .enlaces-navbar-sobre-mi {
@@ -256,27 +270,8 @@ nav {
 
 .contenedorSobre-mi {
   width: 700px;
-  margin: 50px auto;
-}
-
-.header-sobre-mi {
-  width: 100px;
-  height: 100px;
-}
-.header-sobre-mi .navbar-sobre-mi {
-  display: grid;
-  text-decoration: none;
-  padding: 45px;
-  margin-top: 10px;
-  height: 500px;
-  width: 500px;
-}
-.header-sobre-mi .navbar-sobre-mi .ul-sobre-mi li {
-  list-style: none;
-  padding: 10px;
-}
-.header-sobre-mi .navbar-sobre-mi :hover {
-  color: rgb(180, 180, 180);
+  margin: auto;
+  padding-top: 100px;
 }
 
 .Frenesies-Video-sobre-mi {
@@ -297,15 +292,38 @@ p {
   font-weight: bold;
 }
 
+.header-sobre-mi {
+  width: 400px;
+  position: absolute;
+}
+
+.navbar-sobre-mi {
+  display: grid;
+  text-decoration: none;
+  padding: 40px;
+  margin-top: 10px;
+  width: 400px;
+  position: absolute;
+}
+.navbar-sobre-mi .ul-sobre-mi li {
+  list-style: none;
+  padding: 10px;
+}
+.navbar-sobre-mi :hover {
+  color: rgb(180, 180, 180);
+}
+
 .box-contacto, .contactate {
   width: 400px;
-  margin: 50px auto;
+  margin: auto;
+  padding-top: 50px;
 }
 
 .contactate {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
   font-family: "" Gill Sans ", " Gill Sans MT ", Calibri, " Trebuchet MS ", sans-serif;";
+  padding-bottom: 50px;
 }
 
 .form {
@@ -333,10 +351,11 @@ p {
   width: 400px;
 }
 .header-contacto .navbar-contacto {
-  display: grid;
   text-decoration: none;
   padding: 45px;
   margin-top: 10px;
+  width: 400px;
+  position: absolute;
 }
 .header-contacto .navbar-contacto .ul-contacto li {
   list-style: none;
@@ -344,15 +363,6 @@ p {
 }
 .header-contacto .navbar-contacto :hover {
   color: rgb(180, 180, 180);
-}
-
-.header-contacto {
-  width: 100%;
-}
-
-.navbar-contacto {
-  width: 100%;
-  position: absolute;
 }
 
 .enlaces-navbar-contacto {
@@ -364,30 +374,42 @@ p {
   font-weight: bold;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1350px) {
   h2 {
     font-size: 20px;
   }
   .BotonHome {
-    width: 350px;
+    width: 250px;
   }
   .EscucharAhora {
-    font-size: 40px;
+    font-size: 25px;
+  }
+  .enlaces-navbar {
+    font-size: 25px;
+  }
+  .h1-texto {
+    font-size: 20px;
   }
 }
 @media (max-width: 878px) {
-  h2 {
-    display: none;
-  }
   .BotonHome {
     display: none;
   }
   .EscucharAhora {
     display: none;
   }
+  .h1-text {
+    display: none;
+  }
+  .inicio {
+    display: none;
+  }
+  .footer-text {
+    display: none;
+  }
 }
 @media (max-width: 790px) {
-  header nav .navbar {
+  .navbar {
     position: absolute;
     top: 0;
     left: 0;
@@ -399,6 +421,10 @@ p {
     text-align: center;
     font-size: 60px;
     width: auto;
+    align-content: center;
+  }
+  .enlaces-navbar {
+    font-size: 20px;
   }
 }
 @media (max-width: 1440px) {
@@ -416,7 +442,7 @@ p {
   .VIDEOS .iframe {
     width: 1000px;
   }
-  h1 {
+  .h1-videos {
     display: none;
   }
   .ul-videos {
@@ -466,10 +492,16 @@ p {
   .ul-videos {
     padding: 0px;
   }
+  .enlaces-navbar-videos {
+    font-size: 20px;
+  }
 }
-@media (max-width: 850px) {
+@media (max-width: 858px) {
   .VIDEOS .iframe {
     width: 600px;
+  }
+  .enlaces-navbar-videos {
+    font-size: 20px;
   }
 }
 @media (max-width: 606px) {
@@ -477,8 +509,7 @@ p {
     width: 400px;
   }
   .enlaces-navbar-videos {
-    font-size: 15px;
-    flex-wrap: wrap;
+    font-size: 18px;
   }
 }
 @media (max-width: 442px) {
@@ -486,10 +517,13 @@ p {
     width: 350px;
   }
   .enlaces-navbar-videos {
-    font-size: 12px;
+    font-size: 14px;
   }
   .ul-videos {
     padding: 0px;
+  }
+  .footer-text {
+    font-size: 13px;
   }
 }
 @media (max-width: 1700px) {
@@ -541,15 +575,34 @@ p {
   .navbar-musica :hover {
     color: rgb(180, 180, 180);
   }
+  .header-musica .nav-musica {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .enlaces-navbar-musica {
+    font-size: 20px;
+  }
 }
 @media (max-width: 670px) {
   .enlaces-navbar-musica {
     font-size: 20px;
   }
+  .header-musica .nav-musica {
+    width: 100%;
+  }
 }
 @media (max-width: 470px) {
   .enlaces-navbar-musica {
-    font-size: 16px;
+    font-size: 14px;
+  }
+  .portadasAlbumes {
+    width: 100%;
+    height: 80%;
+  }
+  .contenedorAlbum {
+    justify-content: center;
+    width: 80%;
   }
 }
 @media (max-width: 1350px) {
@@ -557,8 +610,13 @@ p {
     display: flex;
     padding: 0px;
   }
+  .header-contacto .navbar-contacto {
+    position: static;
+    width: 100%;
+  }
   .header-contacto {
     width: 100%;
+    height: 100px;
     position: static;
     display: flex;
     align-items: center;
@@ -574,17 +632,27 @@ p {
     text-decoration: none;
     text-align: left;
   }
+  .enlaces-navbar-contacto {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: left;
+  }
   .navbar-contacto {
-    width: 100%;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     padding: 45px;
     margin-top: 10px;
-    position: static;
   }
   .navbar-contacto .ul-contacto li {
+    display: flex;
     list-style: none;
     padding: 10px;
   }
@@ -592,14 +660,32 @@ p {
     color: rgb(180, 180, 180);
   }
 }
+@media (max-width: 1000px) {
+  .enlaces-navbar-contacto {
+    font-size: 20px;
+  }
+}
 @media (max-width: 700px) {
   .enlaces-navbar-contacto {
     font-size: 20px;
+  }
+  .header-contacto .navbar-contacto {
+    position: static;
+    width: 100%;
+  }
+  .box-contacto, .contactate {
+    width: 200px;
+  }
+  .form input {
+    line-height: 1;
   }
 }
 @media (max-width: 600px) {
   .box-contacto, .contactate {
     width: 350px;
+  }
+  .enlaces-navbar-contacto {
+    font-size: 18px;
   }
 }
 @media (max-width: 500px) {
@@ -607,12 +693,21 @@ p {
     width: 250px;
   }
   .enlaces-navbar-contacto {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media (max-width: 450px) {
   .enlaces-navbar-contacto {
-    font-size: 13px;
+    font-size: 14px;
+  }
+  .header-contacto .navbar-contacto {
+    position: static;
+  }
+  .box-contacto, .contactate {
+    width: 200px;
+  }
+  .form input {
+    line-height: 1;
   }
 }
 @media (max-width: 1200px) {
@@ -632,13 +727,14 @@ p {
     text-transform: uppercase;
     color: black;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     text-decoration: none;
     text-align: left;
   }
   .navbar-sobre-mi {
     width: 100%;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -655,7 +751,7 @@ p {
     color: rgb(180, 180, 180);
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .enlaces-navbar-sobre-mi {
     font-size: 20px;
   }
@@ -669,7 +765,12 @@ p {
     font-size: 20px;
   }
   .enlaces-navbar-sobre-mi {
-    font-size: 16px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .enlaces-navbar-sobre-mi {
+    font-size: 20px;
   }
 }
 @media (max-width: 560px) {
@@ -680,6 +781,9 @@ p {
   p {
     font-size: 15px;
   }
+  .enlaces-navbar-sobre-mi {
+    font-size: 18px;
+  }
 }
 @media (max-width: 500px) {
   .enlaces-navbar-sobre-mi {
@@ -688,7 +792,10 @@ p {
 }
 @media (max-width: 450px) {
   .enlaces-navbar-sobre-mi {
-    font-size: 13px;
+    font-size: 14px;
+  }
+  .header-sobre-mi .navbar-sobre-mi {
+    height: 100px;
   }
 }
 

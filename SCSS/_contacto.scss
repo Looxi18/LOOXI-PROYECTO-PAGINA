@@ -1,8 +1,7 @@
 .box-contacto {
     width: 400px;
-    margin: 50px auto;
-
-
+    margin: auto;
+    padding-top: 50px;
 }
 
 .contactate {
@@ -10,6 +9,7 @@
     color: map-get($paleta-colores-contacto, color-contacto);
     font-family: map-get($fuente-contacto, titulo);
     @extend .box-contacto;
+    padding-bottom:50px;
 
 }
 
@@ -36,15 +36,15 @@
     }
 }
 
+
 .header-contacto {
     width: 400px;
-
     .navbar-contacto {
-        display: grid;
         text-decoration: none;
         padding: 45px;
         margin-top: 10px;
-
+        width: 400px;
+        position: absolute;
         .ul-contacto {
             li {
                 list-style: none;
@@ -58,16 +58,6 @@
 
     }
 }
-
-
-.header-contacto{
-    width: 100%
-}
-.navbar-contacto{
-    width:100%;
-    position: absolute;
-}
-
 
 .enlaces-navbar-contacto {
     text-decoration: none;

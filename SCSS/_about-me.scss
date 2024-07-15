@@ -1,11 +1,11 @@
 .atardecer-frenesies {
     width: 80%;
-    max-width: 1100px;
     margin: 40px auto;
     display: grid;
+    padding-bottom: 100px;
 }
 
-.enlaces-navbar-sobre-mi{
+.enlaces-navbar-sobre-mi {
     text-decoration: none;
     text-transform: uppercase;
     color: $color-principal;
@@ -17,33 +17,8 @@
 
 .contenedorSobre-mi {
     width: 700px;
-    margin: 50px auto;
-}
-
-.header-sobre-mi {
-    width: 100px;
-    height: 100px;
-
-    .navbar-sobre-mi {
-        display: grid;
-        text-decoration: none;
-        padding: 45px;
-        margin-top: 10px;
-
-        .ul-sobre-mi {
-            li {
-                list-style: none;
-                padding: 10px;
-            }
-        }
-
-        :hover {
-            color: $color-navbar;
-        }
-
-        height: 500px;
-        width: 500px;
-    }
+    margin: auto;
+    padding-top: 100px;
 }
 
 .Frenesies-Video-sobre-mi {
@@ -57,9 +32,35 @@
 
     filter: sepia(100%) blur(60px);
 }
-p{
+
+p {
     font-family: $fuente-principal;
     font-size: 25px;
     font-style: italic;
     font-weight: bold;
+}
+
+.header-sobre-mi {
+    width: 400px;
+    position: absolute;
+}
+
+.navbar-sobre-mi {
+    display: grid;
+    text-decoration: none;
+    padding: 40px;
+    margin-top: 10px;
+    width: 400px;
+    position: absolute;
+
+    .ul-sobre-mi {
+        li {
+            list-style: none;
+            padding: 10px;
+        }
+    }
+
+    :hover {
+        color: $color-navbar;
+    }
 }

@@ -1,27 +1,47 @@
-@media (max-width:1024px) {
+
+@media (max-width:1350px) {
     h2 {
         font-size: 20px;
     }
 
     .BotonHome {
-        width: 350px;
+        width: 250px;
     }
 
     .EscucharAhora {
-        font-size: 40px
+        font-size: 25px
     }
+
+    .enlaces-navbar{
+        font-size:25px ;
+    }
+    .h1-texto{
+        font-size: 20px;
+    }
+
+
+
+
 }
 
 @media (max-width:878px) {
-    h2 {
-        display: none;
-    }
 
     .BotonHome {
         display: none;
     }
 
     .EscucharAhora {
+        display: none;
+    }
+      .h1-text{
+        display: none;
+    }
+
+    .inicio{
+        display:none;
+    }
+
+    .footer-text{
         display: none;
     }
 }
@@ -29,23 +49,24 @@
 
 
 @media (max-width:790px) {
-    header {
-        nav {
-            .navbar {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 20px;
-                height: 100vh;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                font-size: 60px;
-                width: auto;
 
-            }
-        }
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 20px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 60px;
+        width: auto;
+        align-content: center;
+
+    }
+    .enlaces-navbar{
+        font-size:20px ;
     }
 
 }

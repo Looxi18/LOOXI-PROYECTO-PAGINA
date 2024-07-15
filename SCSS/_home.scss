@@ -1,18 +1,15 @@
 @import "extend";
-header{
-    width: 400px
-}
-nav{
-    width:400;
-}
+
 .navbar {
     display: grid;
     text-decoration: none;
     padding: 40px;
     margin-top: 10px;
     width: 400px;
+    position: absolute;
+    z-index: 1;
 
-    ul {
+    .ul-home {
         li {
             list-style: none;
             padding: 10px;
@@ -43,6 +40,7 @@ nav{
     right: 0;
     left: 0;
     bottom: 0;
+    padding-top: 100px;
 }
 
 .logo {
@@ -83,23 +81,17 @@ nav{
     width: 100%;
     background-color: $color-secundario;
     position: fixed;
-    opacity: 15%;
+    opacity: 30%;
     mix-blend-mode: hard-light;
     top: 0;
     left: 0;
     z-index: -99;
 }
 
-.main-text {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 10%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    color: $color-principal;
-    font-family: $fuente-secundaria
+.frenesies-portada-inicio {
+    width: 20%;
 }
+
 
 .BotonHome {
     border: 1px solid;
@@ -108,7 +100,7 @@ nav{
     color: $color-principal;
     font-family: $fuente-principal;
     font-style: italic;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
 
     :hover {
@@ -122,4 +114,28 @@ nav{
     text-transform: uppercase;
     color: $color-principal;
 }
+
+.h1-texto{
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: $color-principal;
+}
+
+@keyframes fade-inout{
+    0%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
+
+.inicio {
+    width: 100%;
+    padding-top: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    row-gap: 70px;
+    animation: fade-inout 6s infinite alternate
+}
+
 
